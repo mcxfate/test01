@@ -28,6 +28,7 @@ public class TestDemo02 {
 
         StudentDao studentDao = new StudentDaoImpl();
         list = studentDao.selectAll();
+        System.out.println(12);
 
 
 
