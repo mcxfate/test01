@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--        mapper 中的 namespace 取值也为 Dao 接口的全限定性名。-->
+<mapper namespace="test01">
+
+    <!--    id设为接口中方法的名称-->
+    <select id="selectAll" resultType="com.example.domain.Student">
+        select *
+        from student
+    </select>
+
+</mapper>
